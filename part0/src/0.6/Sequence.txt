@@ -1,0 +1,7 @@
+User types into search bar and clicks send.
+browser -> server: POST request - https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+Form data sent: {
+  "content": "testing",
+  "date": "2024-11-21T22:27:01.990Z"
+}
+server -> browser: 201 - created    {"message":"note created"}

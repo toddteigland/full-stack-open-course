@@ -1,0 +1,32 @@
+User navigates to page
+browser -> server: GET request - https://studies.cs.helsinki.fi/exampleapp/notes
+server -> browser: HTML document
+
+browser -> server: Get request - https://studies.cs.helsinki.fi/exampleapp/main.css
+server -> browser:  CSS file
+
+browser -> server: Get request - https://studies.cs.helsinki.fi/exampleapp/main.js
+server -> browser:  Javascript file
+Javascript file requests data.json
+
+browser -> server: Get request - https://studies.cs.helsinki.fi/exampleapp/data.json
+server -> browser:  JSON file [{"content":"","date":"2024-11-21T20:49:15.764Z"})
+
+
+User types into search bar and clicks send.
+browser -> server: POST request - https://studies.cs.helsinki.fi/exampleapp/new_note
+Form data sent: note: test
+server -> browser:  302 - found
+
+browser -> server: Get request - https://studies.cs.helsinki.fi/exampleapp/notes
+server -> browser:  HTML document
+
+browser -> server: Get request - https://studies.cs.helsinki.fi/exampleapp/main.css
+server -> browser:  CSS file
+
+browser -> server: Get request - https://studies.cs.helsinki.fi/exampleapp/main.js
+server -> browser:  Javascript file
+Javascript file requests data.json
+
+browser -> server: Get request - https://studies.cs.helsinki.fi/exampleapp/data.json
+server -> browser:  JSON file [{"content":"","date":"2024-11-21T20:49:15.764Z"})
